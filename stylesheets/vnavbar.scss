@@ -1,0 +1,48 @@
+---
+---
+@import "vars";
+
+$iwidth: 30px;
+$iheight: 30px;
+
+.vnavbar-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border: solid 1px black;
+    padding: $padding1;
+    font-size: 1.5rem;
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+       
+        li{
+            border: solid 1px red;
+        }
+    
+        li:last-child {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            svg{
+                fill: $accent;
+                display: block;
+            }
+        }
+    
+        .icon{
+            width: $iwidth;
+            height: $iheight;
+        }
+    }
+}
+
+
+#logo-link > img{
+    max-width: 40px;
+}

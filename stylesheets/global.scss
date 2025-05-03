@@ -1,0 +1,46 @@
+---
+---
+@import "vars";
+
+html,
+body,
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Poppins, 'sans-serf', 'Times New Roman', Times, serif;
+}
+
+li {
+    overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  display: block;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+svg {
+    flex-shrink: 0;
+}
