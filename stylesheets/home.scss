@@ -4,10 +4,9 @@
 
 #nav-main-wrapper{
 
-    background-color: $background;
-    color: $accent;
+    background-color: $dark1;
+    color: $light1;
   
-    border: solid 2px blue;
     display: flex;
     width: 100%;
 
@@ -27,11 +26,54 @@
 */
 #home-main{
     width: 100%;
-    border: solid 2px red;
     flex: 5;
 }
 
+.splash-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
 .splash-wrapper{
+    position: relative;
     padding: $padding1;
-    border: solid 2px blue;
+    height: 100vh;
+    background: url("/assets/splash/harrison-broadbent-unsplash.jpg");
+    //background: linear-gradient( rgba(255, 0, 0, 1), rgba(0, 255, 0, 0.5)), url("/assets/splash/harrison-broadbent-unsplash.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    > div {
+        width: 60%;
+        height: 50%;
+        z-index: 1;
+    }
+
+    .circle-mask {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {       
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.cardgrid-wrapper{
+    height: 100vh;
 }

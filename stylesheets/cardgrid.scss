@@ -1,0 +1,43 @@
+---
+---
+@import "vars";
+
+.cardgrid-wrapper{
+    padding: $padding1;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75rem;
+
+    .grid-wrapper{
+        width: 85%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        div {
+            aspect-ratio: 1 / 1.5;
+        }
+    
+        .projectcard{
+            display: flex;
+            flex-direction: column;
+            overflow: none;
+            height: 100%;
+            gap: 0.5rem;
+
+            padding: $padding1;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                aspect-ratio: 1 / 1;
+                border-radius: 5%;
+            }
+        }
+    }
+}
+

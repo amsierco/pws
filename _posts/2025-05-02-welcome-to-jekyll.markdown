@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title:  "Welcome to Jekyll - LRTa!"
 date:   2025-05-02 14:55:52 -0400
 categories: jekyll update
