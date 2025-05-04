@@ -1,10 +1,23 @@
 <div class="cardgrid-wrapper">
+    <h1>Projects</h1>
     <div class="grid-wrapper">
         {% for project in site.data.projects %}
-            <div class="projectcard">
-                <img loading="lazy" src="{{ 'assets/projects/' | append: project.title | append: '/' | append: project.image }}" alt="{{ project.title }}">
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
+            <div class="projectcard-wrapper">
+                <div id="project-icons">
+                    {% if project.status == "done" %}
+                        {% include svgs/check.html %}
+                    {% elsif project.status == "wip" %}
+                        {% include svgs/wrench.html %}
+                    {% else %}
+                        {% include svgs/x.html %}
+                    {% endif %}
+                    <a href="{{ project.link }}">{% include svgs/github.html %}</a>
+                </div>
+                <div class="projectcard">
+                    <img loading="lazy" src="{{ 'assets/projects/' | append: project.title | append: '/' | append: project.image }}" alt="{{ project.title }}">
+                    <h1>{{ project.title }}</h1>
+                    <div>{{ project.description }}</div>
+                </div>
             </div>
         {% endfor %}
     </div>

@@ -26,7 +26,7 @@
 */
 #home-main{
     width: 100%;
-    flex: 5;
+    flex: 9;
 }
 
 .splash-wrapper::before {
@@ -70,6 +70,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            
         }
     }
 }

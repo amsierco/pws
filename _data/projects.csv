@@ -1,2 +1,2 @@
-title,description,image
-WolvWatch, Embedded systems smartwatch,watchtop.jpg
+title,status,description,link,image
+WolvWatch,done,Embedded systems smartwatch,https://github.com/wolvwatch/wolv,watchtop.jpg
